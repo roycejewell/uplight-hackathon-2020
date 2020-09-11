@@ -1,6 +1,6 @@
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
+ * Uplight Hackathon 2020
+ * hack away
  * https://HosseinKarami.github.io/fastshell
  * @author Hossein Karami
  * @version 1.0.5
