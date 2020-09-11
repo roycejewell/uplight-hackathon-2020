@@ -1,0 +1,102 @@
+@mixin mq($media-query) {
+    @media ($media-query) {
+        @content;
+    }
+}
+//Breakpoints
+$breakpoint-s: 37.5em; // *16 = 600
+$breakpoint-m: 60em; // *16 = 960
+$breakpoint-l: 80em; // *16 = 1280
+$breakpoint-xl: 120em; // * 16 = 1920
+
+// Media Queries
+$S: "min-width:" + $breakpoint-s;
+$M: "min-width:" + $breakpoint-m;
+$L: "min-width:" + $breakpoint-l;
+$XL: "min-width:" + $breakpoint-xl;
+
+
+$easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$easeInOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+$easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$easeInOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+$easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$easeInOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+$easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeInOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$easeInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+$easeInOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+
+$easeInExpo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+$easeInOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+
+$easeInCirc: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+$easeInOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+$easeInBack: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+$easeInOutFast: cubic-bezier(1,0,0,1);
+
+$authenticMotion: cubic-bezier(.4,0,.2,1);
+
+
+
+$green: #00E297;
+$blue: #0047FF;
+$darkBlue: #0000A2;
+$white: #FFF;
+$orange: #FF845A;
+
+html {
+  font-family: 'Mark W01 Book';
+}
+
+a.primary-btn, button.primary-btn, input.primary-btn, .primary-btn{
+     display: inline-block;
+     padding: 9px 24px 13px;
+     font-family: "Mark W01 Medium";
+     font-size: 16px;
+     line-height: 20px;
+     border-radius: 100px;
+     transition: .3s background-color, .3s color;
+     margin-top: 35px;
+     &:hover{
+          color:$green !important;
+          background-color:$white !important;
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+     }
+}
+
+.primary-btn.green{
+     background: $green;
+     color: $blue;
+     &:hover{
+          color:$green !important;
+          background-color: $white !important;
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+     }
+}
+
+.primary-btn.blue{
+     background: $blue;
+     color: $green;
+     &:hover{
+          color:$green !important;
+          background-color: $white !important;
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+     }
+}
+

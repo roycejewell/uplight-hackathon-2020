@@ -1,125 +1,74 @@
-.clear:before, .clear:after {
-  content: ' ';
-  display: table; }
-
-.clear {
-  *zoom: 1; }
-  .clear:after {
-    clear: both; }
-
-* {
-  box-sizing: border-box;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
-html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
-
-body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in; }
-
-body, html {
-  min-height: 100vh;
-  overflow: hidden; }
-
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
 /**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  font-family: sans-serif;
+  line-height: 1.15;
   /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
 
+* {
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
+/* Sections
+	 ========================================================================== */
 /**
- * Remove the margin in all browsers (opinionated).
+ * Remove the margin in all browsers.
  */
 body {
   margin: 0; }
 
-/* HTML5 display definitions
-   ========================================================================== */
 /**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
   /* 1 */
-  display: block; }
-
-/**
- * Add the correct display in IE 9-.
- */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block; }
-
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline; }
-
-/**
- * Add the correct display in IE 10-.
- * 1. Add the correct display in IE.
- */
-template,
-[hidden] {
-  display: none; }
-
-/* Links
-   ========================================================================== */
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-a {
-  background-color: transparent;
+  height: 0;
   /* 1 */
-  -webkit-text-decoration-skip: objects;
+  overflow: visible;
   /* 2 */ }
 
 /**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
  */
-a:active,
-a:hover {
-  outline-width: 0; }
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
 
 /* Text-level semantics
-   ========================================================================== */
+	 ========================================================================== */
 /**
- * 1. Remove the bottom border in Firefox 39-.
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
@@ -131,13 +80,6 @@ abbr[title] {
   /* 2 */ }
 
 /**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-b,
-strong {
-  font-weight: inherit; }
-
-/**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
@@ -145,25 +87,16 @@ strong {
   font-weight: bolder; }
 
 /**
- * Add the correct font style in Android 4.3-.
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
  */
-dfn {
-  font-style: italic; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/**
- * Add the correct background and color in IE 9-.
- */
-mark {
-  background-color: #ff0;
-  color: #000; }
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
 
 /**
  * Add the correct font size in all browsers.
@@ -189,72 +122,32 @@ sup {
   top: -0.5em; }
 
 /* Embedded content
-   ========================================================================== */
+	 ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10-.
+ * Remove the border on images inside links in IE 10.
  */
 img {
   border-style: none; }
 
-/**
- * Hide the overflow in IE.
- */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/**
- * Add the correct margin in IE 8.
- */
-figure {
-  margin: 1em 40px; }
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
-
 /* Forms
-   ========================================================================== */
+	 ========================================================================== */
 /**
- * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
 button,
 input,
+optgroup,
 select,
 textarea {
-  font: inherit;
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
   /* 1 */
   margin: 0;
   /* 2 */ }
-
-/**
- * Restore the font weight unset by the previous rule.
- */
-optgroup {
-  font-weight: bold; }
 
 /**
  * Show the overflow in IE.
@@ -275,16 +168,13 @@ select {
   text-transform: none; }
 
 /**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
+ * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-html [type="button"],
+[type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */ }
+  -webkit-appearance: button; }
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -306,18 +196,16 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText; }
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Correct the padding in Firefox.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
+ *		`fieldset` elements in all browsers.
  */
 legend {
   box-sizing: border-box;
@@ -334,14 +222,20 @@ legend {
   /* 1 */ }
 
 /**
- * Remove the default vertical scrollbar in IE.
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
   overflow: auto; }
 
 /**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
  */
 [type="checkbox"],
 [type="radio"] {
@@ -368,18 +262,10 @@ textarea {
   /* 2 */ }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
-
-/**
- * Correct the text style of placeholders in Chrome, Edge, and Safari.
- */
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54; }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -391,77 +277,549 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
 
-.nav ul {
-  list-style: none; }
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
 
 @font-face {
-  font-family: 'Font-Name';
-  src: url("../fonts/font-name.eot");
-  src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "Mark W01 Bold Italic";
+  src: url("/assets/fonts/Mark/5423392/b0ab161f-4dc8-412e-8b6d-89a98e04c3e1.eot?#iefix");
+  src: url("/assets/fonts/Mark/5423392/b0ab161f-4dc8-412e-8b6d-89a98e04c3e1.eot?#iefix") format("eot"), url("/assets/fonts/Mark/5423392/6e8e8927-5a98-49ae-9123-db1798ec6d92.woff2") format("woff2"), url("/assets/fonts/Mark/5423392/dbe0788d-533f-4e84-b346-1f68c19853f9.woff") format("woff"), url("/assets/fonts/Mark/5423392/8aac5d38-8e50-4940-8cd1-ac406f070279.ttf") format("truetype"); }
 
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
+@font-face {
+  font-family: "Mark W01 Bold";
+  src: url("/assets/fonts/Mark/5423411/8706c0b6-b423-44f7-ae1a-dd0aabd8a542.eot?#iefix");
+  src: url("/assets/fonts/Mark/5423411/8706c0b6-b423-44f7-ae1a-dd0aabd8a542.eot?#iefix") format("eot"), url("/assets/fonts/Mark/5423411/41c8162d-c2a6-49b0-8139-8bebab187588.woff2") format("woff2"), url("/assets/fonts/Mark/5423411/4fe94f2e-7892-4785-9663-0350a7adf8c0.woff") format("woff"), url("/assets/fonts/Mark/5423411/3a7daddb-0a78-4734-a699-6fe08d0e8b99.ttf") format("truetype"); }
 
-::selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
+@font-face {
+  font-family: "Mark W01 Medium";
+  src: url("/assets/fonts/Mark/5423451/36390511-9c88-42f2-890f-1ae4b1e7dd70.eot?#iefix");
+  src: url("/assets/fonts/Mark/5423451/36390511-9c88-42f2-890f-1ae4b1e7dd70.eot?#iefix") format("eot"), url("/assets/fonts/Mark/5423451/72d3aeb4-7402-40d6-a945-34360316b980.woff2") format("woff2"), url("/assets/fonts/Mark/5423451/f17f16a9-09cc-4170-a039-5f47a4948438.woff") format("woff"), url("/assets/fonts/Mark/5423451/340db581-50b2-4783-8f40-db42ea764bda.ttf") format("truetype"); }
 
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
+@font-face {
+  font-family: "Mark W01 Book";
+  src: url("/assets/fonts/Mark/5423523/3805eba7-24c2-41ba-91d2-8fa5db02bc00.eot?#iefix");
+  src: url("/assets/fonts/Mark/5423523/3805eba7-24c2-41ba-91d2-8fa5db02bc00.eot?#iefix") format("eot"), url("/assets/fonts/Mark/5423523/e6beefbb-4014-4efa-961b-7762af9aefef.woff2") format("woff2"), url("/assets/fonts/Mark/5423523/5b4bd9d6-75be-4d76-8292-7f6434b9e997.woff") format("woff"), url("/assets/fonts/Mark/5423523/d049afa3-baf5-4612-abf2-852763051b9c.ttf") format("truetype"); }
 
-::-webkit-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
+@font-face {
+  font-family: "Mark W01 Light Italic";
+  src: url("/assets/fonts/Mark/5423542/6b7037f4-1d79-4c1d-98ac-88582ff8a377.eot?#iefix");
+  src: url("/assets/fonts/Mark/5423542/6b7037f4-1d79-4c1d-98ac-88582ff8a377.eot?#iefix") format("eot"), url("/assets/fonts/Mark/5423542/63fdd036-2f81-483e-9ca9-d774353563af.woff2") format("woff2"), url("/assets/fonts/Mark/5423542/31c5860c-aba6-4531-ade5-1cf6f23ac71b.woff") format("woff"), url("/assets/fonts/Mark/5423542/368a1e82-428e-4a89-b49b-9475bfce6041.ttf") format("truetype"); }
 
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  img {
-    max-width: 100% !important; }
-  @page {
-    margin: 0.5cm; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; } }
+@font-face {
+  font-family: "Mark W01 Light";
+  src: url("/assets/fonts/Mark/5423562/a8abc20c-6ce3-48be-b25e-41ae3c6e0379.eot?#iefix");
+  src: url("/assets/fonts/Mark/5423562/a8abc20c-6ce3-48be-b25e-41ae3c6e0379.eot?#iefix") format("eot"), url("/assets/fonts/Mark/5423562/3d82d7a7-de70-4f67-85f4-78342de5fedb.woff2") format("woff2"), url("/assets/fonts/Mark/5423562/23acf083-b36e-4baf-aabc-4935a5c4bdce.woff") format("woff"), url("/assets/fonts/Mark/5423562/caf2b644-efc2-495e-af03-3b385d7de014.ttf") format("truetype"); }
+
+html {
+  font-family: 'Mark W01 Book'; }
+
+a.primary-btn, button.primary-btn, input.primary-btn, .primary-btn {
+  display: inline-block;
+  padding: 9px 24px 13px;
+  font-family: "Mark W01 Medium";
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 100px;
+  transition: .3s background-color, .3s color;
+  margin-top: 35px; }
+  a.primary-btn:hover, button.primary-btn:hover, input.primary-btn:hover, .primary-btn:hover {
+    color: #00E297 !important;
+    background-color: #FFF !important;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); }
+
+.primary-btn.green {
+  background: #00E297;
+  color: #0047FF; }
+  .primary-btn.green:hover {
+    color: #00E297 !important;
+    background-color: #FFF !important;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); }
+
+.primary-btn.blue {
+  background: #0047FF;
+  color: #00E297; }
+  .primary-btn.blue:hover {
+    color: #00E297 !important;
+    background-color: #FFF !important;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); }
+
+.platform {
+  margin-top: 60px;
+  background-color: #FFF; }
+  @media (min-width: 37.5em) {
+    .platform {
+      margin-top: 70px; } }
+  @media (min-width: 60em) {
+    .platform {
+      margin-top: 80px; } }
+  @media (min-width: 120em) {
+    .platform {
+      margin-top: 110px; } }
+  .platform__hero {
+    background-color: #003CFF;
+    padding: 40px;
+    position: relative;
+    overflow: hidden; }
+    @media (min-width: 60em) {
+      .platform__hero {
+        padding: 110px 40px 120px; } }
+    @media (min-width: 80em) {
+      .platform__hero {
+        padding: 200px 40px 140px; } }
+    .platform__hero-content {
+      position: relative;
+      max-width: 1100px;
+      margin: auto; }
+    .platform__hero-line {
+      height: 4px;
+      width: 0;
+      background-color: #FFF;
+      border-radius: 20px;
+      animation: solutionHeroLine 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 1.6s forwards; }
+    .platform__hero-arrow {
+      text-align: center;
+      opacity: 0;
+      cursor: pointer;
+      animation: solutionArrow 1s cubic-bezier(0.215, 0.61, 0.355, 1) 2s forwards; }
+    .platform__hero-header {
+      animation: solutionHeroContent 1.1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.85s forwards;
+      opacity: 0;
+      color: #FFFFFF;
+      font-family: "Mark W01 Medium" !important;
+      font-size: 21px !important;
+      line-height: 140% !important;
+      font-weight: 200 !important;
+      padding: 0;
+      margin: 0 0 150px 0; }
+      .platform__hero-header strong {
+        color: #01E297;
+        font-weight: 600 !important; }
+      .platform__hero-header * {
+        margin: 0;
+        padding: 0; }
+      @media (min-width: 60em) {
+        .platform__hero-header {
+          font-family: "Mark W01 Light" !important;
+          font-size: 60px !important;
+          line-height: 110% !important;
+          font-weight: 200 !important; } }
+    .platform__hero-sub-header {
+      font-family: "Mark W01 Medium";
+      font-size: 36px;
+      line-height: 1.3;
+      color: #00E297;
+      animation: solutionHeroContent 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.7s forwards;
+      opacity: 0;
+      padding: 0;
+      margin: 30px 0 15px; }
+    .platform__hero-line-cover {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      left: 0;
+      right: 0;
+      background-color: #003CFF;
+      animation: solutionHeroCover 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s forwards;
+      z-index: 2; }
+    .platform__hero-line-1 {
+      position: absolute;
+      display: block;
+      height: 1px;
+      bottom: 35%;
+      width: 200vw;
+      left: -75%;
+      background-color: rgba(255, 255, 255, 0.5);
+      -ms-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+      animation: solutionHeroLine1 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s forwards; }
+    .platform__hero-line-2 {
+      position: absolute;
+      display: block;
+      height: 1px;
+      bottom: 35%;
+      width: 200vw;
+      left: -75%;
+      background-color: rgba(255, 255, 255, 0.5);
+      -ms-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+      animation: solutionHeroLine2 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s forwards; }
+
+@keyframes solutionArrow {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes solutionHeroLine {
+  0% {
+    width: 0; }
+  100% {
+    width: 30px; } }
+
+@keyframes solutionHeroLine1 {
+  0% {
+    transform: rotate(-35deg); }
+  100% {
+    transform: rotate(-51deg); } }
+
+@keyframes solutionHeroLine2 {
+  0% {
+    transform: rotate(-35deg); }
+  100% {
+    transform: rotate(-16deg); } }
+
+@keyframes solutionHeroCover {
+  0% {
+    height: 100%; }
+  100% {
+    height: 0; } }
+
+@keyframes solutionHeroContent {
+  0% {
+    transform: translateY(10px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+  .platform__card-bg {
+    background-color: #EDEDED;
+    padding: 150px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 60em) {
+      .platform__card-bg {
+        padding: 150px 40px; } }
+  .platform__card {
+    max-width: 1100px;
+    margin: 0 0 150px;
+    border-radius: 4px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: center;
+        align-items: center; }
+    .platform__card.left {
+      margin: 0; }
+    @media (min-width: 60em) {
+      .platform__card {
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+        .platform__card.left {
+          margin: 150px auto 0;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; } }
+    .platform__card-illustration {
+      opacity: 0;
+      width: 375px;
+      max-width: 70%;
+      margin: 50px 0;
+      opacity: 0;
+      -ms-transform: translateY(20px);
+          transform: translateY(20px); }
+      @media (min-width: 60em) {
+        .platform__card-illustration {
+          width: 325px;
+          max-width: 325px;
+          margin-left: 50px;
+          margin-right: 50px; } }
+  @media (min-width: 60em) and (min-width: 80em) {
+    .platform__card-illustration {
+      margin-left: 90px;
+      margin-right: 90px; } }
+      @media (min-width: 80em) {
+        .platform__card-illustration {
+          width: 375px;
+          max-width: 375px; } }
+      .inView .platform__card-illustration {
+        transition: all 0.8s ease 0.75s;
+        opacity: 1;
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+
+@keyframes cardContentEnter {
+  0% {
+    transform: translateY(75px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes cardTextEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(15px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+    .platform__card-content {
+      background-color: #FFF;
+      padding: 30px;
+      max-width: 100%;
+      width: 100%;
+      margin-top: -75px;
+      -ms-transform: translateY(75px);
+          transform: translateY(75px); }
+      @media (min-width: 60em) {
+        .platform__card-content {
+          max-width: 478px;
+          padding: 50px;
+          margin-top: -75px;
+          margin-bottom: 75px;
+          margin-right: 55px; }
+          .left .platform__card-content {
+            margin-left: 55px;
+            margin-right: 0; } }
+      @media (min-width: 80em) {
+        .platform__card-content {
+          padding: 70px 75px; } }
+      .inView .platform__card-content {
+        animation: cardContentEnter 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s forwards; }
+      .soc .platform__card-content {
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25); }
+    .platform__card-label {
+      font-size: 16px;
+      line-height: 1.3;
+      font-family: "Mark W01 Medium";
+      text-transform: uppercase;
+      opacity: 0;
+      margin: 0; }
+      .inView .platform__card-label {
+        animation: cardTextEnter 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.45s forwards; }
+    .platform__card-title {
+      font-family: "Mark W01 Medium";
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 1.3;
+      opacity: 0;
+      margin: 10px 0 15px; }
+      .inView .platform__card-title {
+        animation: cardTextEnter 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.55s forwards; }
+    .platform__card-body > * {
+      font-family: "Mark W01 Book";
+      font-size: 18px !important;
+      line-height: 24px;
+      opacity: 0;
+      margin: 0; }
+      .inView .platform__card-body > * {
+        animation: cardTextEnter 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s forwards; }
+  .platform__partners {
+    background-color: #00E297;
+    padding: 50px 40px; }
+    @media (min-width: 60em) {
+      .platform__partners {
+        padding: 100px 40px; } }
+    .platform__partners-content {
+      background-color: #FFF;
+      padding: 90px 50px 70px;
+      border-radius: 4px;
+      max-width: 1100px;
+      margin: auto; }
+    .platform__partners-inner {
+      max-width: 700px;
+      margin: auto; }
+    .platform__partners-title {
+      font-family: "Mark W01 Medium";
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 1.3;
+      color: #0047FF;
+      opacity: 0; }
+      .inView .platform__partners-title {
+        animation: cardTextEnter 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.45s forwards; }
+    .platform__partners-body {
+      max-width: 600px;
+      opacity: 0; }
+      .inView .platform__partners-body {
+        animation: cardTextEnter 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.55s forwards; }
+    .platform__partners-body > * {
+      font-family: "Mark W01 Book";
+      font-size: 18px !important;
+      line-height: 24px; }
+    .platform__partners-list {
+      height: 315px;
+      opacity: 0; }
+      .inView .platform__partners-list {
+        animation: cardTextEnter 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s forwards; }
+      .platform__partners-list .glider-track {
+        height: 100%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+      .platform__partners-list-item {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        margin: auto; }
+        @media (min-width: 60em) {
+          .platform__partners-list-item {
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%; } }
+    .platform__partners-logo {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+  .platform .dots .glider-dot {
+    background-color: #CCFFD5;
+    outline: none; }
+    .platform .dots .glider-dot.active {
+      background-color: #0047FF;
+      outline: none; }
+  .platform .glider-next,
+  .platform .glider-prev {
+    display: none; }
+  .platform__case-study {
+    background-color: #FFF;
+    position: relative; }
+    @media (min-width: 60em) {
+      .platform__case-study {
+        height: 415px; } }
+    .platform__case-study-image-container {
+      display: none;
+      opacity: 0; }
+      @media (min-width: 60em) {
+        .platform__case-study-image-container {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 60vw;
+          bottom: 0;
+          background-position: top right;
+          background-repeat: no-repeat;
+          background-size: cover; } }
+      .inView .platform__case-study-image-container {
+        transition: all 0.8s ease 0.75s;
+        opacity: 1; }
+    .platform__case-study-quote-container {
+      padding: 50px 60px 65px;
+      position: relative; }
+      @media (min-width: 60em) {
+        .platform__case-study-quote-container {
+          padding: 0;
+          height: 415px;
+          display: -ms-flexbox;
+          display: flex;
+          max-width: 1100px;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+          margin: auto; } }
+    @media (min-width: 60em) {
+      .platform__case-study-quote-container-inner {
+        position: relative;
+        -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        padding-right: 40px; } }
+    @media (min-width: 80em) {
+      .platform__case-study-quote-container-inner {
+        padding-right: 0; } }
+    .platform__case-study-title {
+      font-family: "Mark W01 Bold";
+      font-weight: 500;
+      line-height: 140%;
+      margin: 30px 0 20px;
+      padding: 0;
+      font-size: 21px;
+      opacity: 0; }
+      .inView .platform__case-study-title {
+        animation: cardTextEnter 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.45s forwards; }
+    .platform__case-study-body {
+      font-family: "Mark W01 Book";
+      font-size: 18px !important;
+      line-height: 24px;
+      opacity: 0;
+      margin-bottom: 30px; }
+      .inView .platform__case-study-body {
+        animation: cardTextEnter 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.55s forwards; }
+    .platform__case-study-cta {
+      margin-top: 0 !important;
+      opacity: 0;
+      padding: 16px 24px 20px !important; }
+      .inView .platform__case-study-cta {
+        animation: cardTextEnter 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s forwards; }
+  .platform__learn-more {
+    background-color: #000F9F;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .platform__learn-more-content {
+      max-width: 1180px;
+      padding: 100px 40px;
+      margin: auto; }
+      @media (min-width: 60em) {
+        .platform__learn-more-content {
+          padding: 150px 40px; } }
+    .platform__learn-more-title {
+      font-family: "Mark W01 Medium";
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 1.3;
+      margin: 0;
+      padding: 0;
+      color: #FFF;
+      opacity: 0; }
+      .inView .platform__learn-more-title {
+        animation: cardTextEnter 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.45s forwards; }
+    .platform__learn-more-body {
+      font-family: "Mark W01 Bold";
+      font-size: 21px;
+      line-height: 1.3;
+      color: #FFF;
+      padding: 25px 0 40px;
+      max-width: 860px;
+      opacity: 0; }
+      .inView .platform__learn-more-body {
+        animation: cardTextEnter 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.55s forwards; }
+      @media (min-width: 60em) {
+        .platform__learn-more-body {
+          font-family: "Mark W01 Light";
+          font-weight: 350;
+          font-size: 36px;
+          line-height: 1.3; } }
+    .platform__learn-more-cta {
+      opacity: 0;
+      padding: 16px 24px 20px !important; }
+      .inView .platform__learn-more-cta {
+        animation: cardTextEnter 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s forwards; }
